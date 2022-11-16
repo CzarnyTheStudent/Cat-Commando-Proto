@@ -31,7 +31,7 @@ public class Health : MonoBehaviour
     {
         if(health >= 1)
         {
-            health -= d; //1-1=0
+            health -= d; //1-1=0     
             Destroy(Heart[health].gameObject); //[1]
             if (health < 1)
             {
