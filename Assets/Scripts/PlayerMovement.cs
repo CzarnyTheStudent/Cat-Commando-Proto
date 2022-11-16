@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
             if (moving == true)
         { 
             movement();
-            collectedText.text = "PD: " + collectedAmount;
+            collectedText.text = "MLEKO ZEBRANE: " + collectedAmount;
         }
         movementCheck();
     }
