@@ -5,16 +5,14 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int health; // 1
-
-    public GameObject[] Heart; //[0] 
+    public int health, maxHealth; // 1
     
     private bool dead;
 
 
     private void Start()
     {
-        health = Heart.Length;
+        health = maxHealth;
     }
     void Update()
     {
@@ -32,7 +30,6 @@ public class Health : MonoBehaviour
         if(health >= 1)
         {
             health -= d; //1-1=0     
-            Destroy(Heart[health].gameObject); //[1]
             if (health < 1)
             {
                 dead = true;
