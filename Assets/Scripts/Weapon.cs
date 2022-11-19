@@ -9,32 +9,49 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
     public int currentClip, maxClipSize = 6, currentAmmo, maxAmmoSize = 18;
+    public float reloadTime;
 
 
     //bools
     bool shooting;
+    private bool isReloading = false;
+    //bool reload;
 
     //Reference
     public Transform attackPoint;
     public RaycastHit bulletHit;
     public LayerMask whatIsEnemy;
     public Weapon weapon;
-    
+
+    void OnEnable()
+    {
+        
+        
+    }
+
+
     private void Update()
     {
-        if (shooting = Input.GetButtonDown("Fire1"))
+
+      
+        if (shooting = Input.GetButtonDown("Fire1") && isReloading == false)
             {
             weapon.Shoot();
         }
 
-        if(Input.GetKeyDown(KeyCode.R))
+        if( Input.GetKeyDown(KeyCode.R)) //currentClip == 0 |
         {
-            weapon.Reload();
+            StartCoroutine("Reload");
 
+
+           
+           
         }
         
 
     }
+
+
 
     void Shoot()
     {
@@ -50,12 +67,20 @@ public class Weapon : MonoBehaviour
 
     }
 
-    public void Reload()
+    IEnumerator Reload()
     {
+        
+        isReloading = true;
+        Debug.Log("Prze³adowuje");
         int reloadAmount = maxClipSize - currentClip; //Ile kul by na³adowaæ magazynek
         reloadAmount = (currentAmmo - reloadAmount) >=0 ? reloadAmount : currentAmmo;
         currentClip += reloadAmount;
         currentAmmo -= reloadAmount;
+        yield return new WaitForSeconds(reloadTime);
+
+        isReloading = false;
+        Debug.Log("Prze³adowano");
+
     }
 
     public void AddAmmo (int ammoAmount)
@@ -67,6 +92,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    
 
 
 }

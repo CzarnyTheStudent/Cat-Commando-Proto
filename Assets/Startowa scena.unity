@@ -1565,6 +1565,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7156318232248430338, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+      propertyPath: reloadTime
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7524365764660222713, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: collectedText
       value: 
