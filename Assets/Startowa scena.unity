@@ -1108,8 +1108,8 @@ LightingSettings:
   m_PVRTiledBaking: 0
 --- !u!114 &1198226365 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 219439569534502690, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
-  m_PrefabInstance: {fileID: 2720329956653450956}
+  m_CorrespondingSourceObject: {fileID: 7156318232248430338, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+  m_PrefabInstance: {fileID: 7156318233303897279}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -1224,11 +1224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followPlayer: 1
---- !u!4 &1743609734 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 219439568922511504, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
-  m_PrefabInstance: {fileID: 2720329956653450956}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1812989248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,88 +1509,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c40ea8a385a7264bb76be6ec2b0dfb8, type: 3}
---- !u!1001 &2720329956653450956
+--- !u!4 &2795352797064985218 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+  m_PrefabInstance: {fileID: 7156318233303897279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7156318233303897279
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 219439569534502690, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
-      propertyPath: weapon
-      value: 
-      objectReference: {fileID: 1198226365}
-    - target: {fileID: 219439569534502690, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
-      propertyPath: attackPoint
-      value: 
-      objectReference: {fileID: 1743609734}
-    - target: {fileID: 219439569534502690, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
-      propertyPath: currentAmmo
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 219439569534502690, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
-      propertyPath: currentClip
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882761, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
-      propertyPath: m_Name
-      value: Gracz
-      objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6516741804644481039, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+    - target: {fileID: 7524365764660222713, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: collectedText
       value: 
       objectReference: {fileID: 917262885}
+    - target: {fileID: 8927150706114974085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+      propertyPath: m_Name
+      value: Gracz
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
---- !u!4 &2795352797064985218 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 219439569552882766, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
-  m_PrefabInstance: {fileID: 2720329956653450956}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8940772599606672998
 PrefabInstance:
   m_ObjectHideFlags: 0
