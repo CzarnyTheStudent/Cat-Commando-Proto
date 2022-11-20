@@ -7,20 +7,15 @@ public class PlayerRotate : MonoBehaviour
 
 
 
-    void Start()
+    private void FixedUpdate()
     {
-       
-    }
+        Vector3 diffrence = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        diffrence.Normalize();
 
-    void FixedUpdate()
-    {
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-       
-        Vector2 direction = new Vector2(mousePosition.x, mousePosition.y - transform.position.y);
-        
-        transform.up = direction;
-  
+        float rotationZ = Mathf.Atan2(diffrence.y, diffrence.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);
+
+
     }
 
 
