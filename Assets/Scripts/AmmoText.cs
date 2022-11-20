@@ -11,7 +11,7 @@ public class AmmoText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UpdateAmmoText();
+       
     }
 
     // Update is called once per frame
