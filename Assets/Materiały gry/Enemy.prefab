@@ -141,4 +141,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 0
-  maxEnemyHealth: 3
+  maxEnemyHealth: 1
