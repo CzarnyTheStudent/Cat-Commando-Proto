@@ -6,6 +6,7 @@ public class EnemyRotate : MonoBehaviour
 {
     public Transform player;
     private Rigidbody2D rb;
+    EnemyRangeOfVision canSeePlayer;
 
     void Start()
     {
@@ -14,10 +15,13 @@ public class EnemyRotate : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 direction = player.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
-
+        
+        {
+            Vector2 direction = player.position - transform.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            rb.rotation = angle;
+        }
+        
 
 
 

@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3355879254411665017}
   m_LocalRotation: {x: -0, y: -0, z: -0.99999976, w: 0.0007520616}
-  m_LocalPosition: {x: 0.0021998885, y: -0.8940003, z: 0.0178}
-  m_LocalScale: {x: 0.49999177, y: 0.49999177, z: 0.4999919}
+  m_LocalPosition: {x: -0.21380022, y: -0.8940007, z: 0.0178}
+  m_LocalScale: {x: 0.4999919, y: 0.4999919, z: 0.4999919}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7156318231703554873}
@@ -104,6 +104,7 @@ MonoBehaviour:
   maxClipSize: 6
   currentAmmo: 12
   maxAmmoSize: 18
+  reloadTime: 0
   attackPoint: {fileID: 7156318231703554873}
   whatIsEnemy:
     serializedVersion: 2
@@ -133,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5531278998098041682}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071067, w: 0.70710695}
-  m_LocalPosition: {x: 0.89699996, y: 0.006000012, z: 0}
+  m_LocalPosition: {x: 0.89699996, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
