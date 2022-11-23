@@ -1,4 +1,0 @@
-repository "Cat Commando Proto@WyczarniaczStudio@cloud"
-  path "/"
-    br "/main"
-    co "/main"
