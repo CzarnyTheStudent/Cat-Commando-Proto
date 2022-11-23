@@ -130,9 +130,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3242308990388556474, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+      propertyPath: m_Size.x
+      value: 0.93166745
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242308990388556474, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.3266072
+      objectReference: {fileID: 0}
     - target: {fileID: 3355879254411665017, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5015689516678721085, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_RootOrder
@@ -180,7 +188,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5531278998098041682, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156318232248430338, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
+      propertyPath: fireRate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156318232248430338, guid: 109215ca8bce05a45ad32ab90d50d013, type: 3}
       propertyPath: reloadTime
@@ -389,6 +401,37 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_PVRTiledBaking: 0
+--- !u!1 &1406431196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1406431197}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1406431197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406431196}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -49.409954}
+  m_LocalScale: {x: 2.4408102, y: 2.4408102, z: 2.4408102}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1532515151}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1486596137
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +539,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followPlayer: 1
+--- !u!4 &1532515151 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8576069512314401734, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
+  m_PrefabInstance: {fileID: 8576069513951673306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1812989248
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +985,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8576069512314401728, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
+      propertyPath: m_Size.y
+      value: 3.0575256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576069512314401728, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.021585464
+      objectReference: {fileID: 0}
     - target: {fileID: 8576069512314401734, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -989,6 +1045,22 @@ PrefabInstance:
       propertyPath: playerRef
       value: 
       objectReference: {fileID: 913690272}
+    - target: {fileID: 8576069512314401740, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 1406431197}
+    - target: {fileID: 8576069512314401740, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
+      propertyPath: attackRange
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576069512314401740, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
+      propertyPath: minimumDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576069512314401740, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
+      propertyPath: targetLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 8576069512314401748, guid: b3b8f6ec1deb916429c02c604a41a565, type: 3}
       propertyPath: m_Name
       value: Enemy

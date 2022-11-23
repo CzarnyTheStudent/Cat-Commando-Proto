@@ -10,8 +10,9 @@ public class Weapon : MonoBehaviour
     public float bulletForce = 20f;
     public int currentClip, maxClipSize = 6, currentAmmo, maxAmmoSize = 18;
     public float reloadTime;
+    public float fireRate;
 
-
+    private float lastShootTime = 0;
     //bools
     bool shooting;
     private bool isReloading = false;
@@ -36,20 +37,27 @@ public class Weapon : MonoBehaviour
       
         if (shooting = Input.GetButtonDown("Fire1") && isReloading == false)
             {
-            weapon.Shoot();
+           
+            
+                weapon.Shoot();
+            
+            
+            
+           
         }
-
-        if( Input.GetKeyDown(KeyCode.R)) //currentClip == 0 |
+       
+        if ( Input.GetKeyDown(KeyCode.R)) //currentClip == 0 |
         {
             StartCoroutine("Reload");
 
 
-           
+
            
         }
         
 
     }
+    
 
 
 
@@ -57,15 +65,20 @@ public class Weapon : MonoBehaviour
     {
         if (currentClip > 0)
         {
-
+            
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+      
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
             currentClip--;
+
+            
         }
 
 
     }
+    
+
 
     IEnumerator Reload()
     {

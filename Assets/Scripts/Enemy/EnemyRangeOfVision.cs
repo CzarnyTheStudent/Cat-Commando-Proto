@@ -24,6 +24,10 @@ public class EnemyRangeOfVision : MonoBehaviour
     public float speed;
     public float minimumDistance;
     //
+    // Attack
+    public Transform attackPoint;
+    public float attackRange = 1f;
+    public LayerMask targetLayers;
 
     private void Start()
     {
@@ -110,84 +114,81 @@ public class EnemyRangeOfVision : MonoBehaviour
         if (Vector2.Distance(transform.position, player.position) > minimumDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            Attack();
         }
+        /*
         else
         {
-            //ATTACK CODE
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-    public float rotationSpeed;
-    public float visionDistance;
-    
-   
-
-    private void Update()
-    {
-        transform. Rotate (Vector3.forward * rotationSpeed * Time.deltaTime);
-
-      RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, visionDistance);
-      if (hitInfo.collider.tag == "Player")
-        {
-            Debug.DrawLine(transform.position, hitInfo.point, Color.red);
             
-        } else
+        }
+        **/
+    }
+
+    private void Attack()
+    {
+        Collider2D[] hitTarget = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, targetLayers);
+
+        //Damage
+        foreach(Collider2D target in hitTarget)
         {
-            Debug.DrawLine(transform.position, transform.position + transform.right * visionDistance, Color.green);
+            target.GetComponent<Health>().TakeDamage(1);
+           
         }
 
-
-
-
+         
 
     }
-    **/
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null) 
+            return;
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
