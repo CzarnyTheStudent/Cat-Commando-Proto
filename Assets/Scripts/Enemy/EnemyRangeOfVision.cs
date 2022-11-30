@@ -10,7 +10,7 @@ public class EnemyRangeOfVision : MonoBehaviour
     [Range(0,360)]
     public float angle;
 
-    public GameObject playerRef;
+    //public GameObject playerRef;
 
     public LayerMask targetMask;
     public LayerMask obstructionMask;
@@ -31,7 +31,7 @@ public class EnemyRangeOfVision : MonoBehaviour
 
     private void Start()
     {
-        playerRef = GameObject.FindGameObjectWithTag("Player");
+       // playerRef = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRoutine());
         rb = this.GetComponent<Rigidbody2D>();
     }
@@ -71,7 +71,7 @@ public class EnemyRangeOfVision : MonoBehaviour
             Transform target = rangeChecks[0].transform;
             Vector2 directionToTarget = (target.position - transform.position).normalized;
 
-            if (Vector2.Angle(transform.right, directionToTarget) < angle / 2)
+            if (Vector2.Angle(transform.right, directionToTarget) < angle * 0.5f)
             {
                 float distanceToTarget = Vector2.Distance(transform.position, target.position);
 

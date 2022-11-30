@@ -21,7 +21,7 @@ public class EnemyRangeOfVisionEditor : Editor
         if (fov.canSeePlayer)
         {
             Handles.color = Color.green;
-            Handles.DrawLine(fov.transform.position, fov.playerRef.transform.position); 
+            Handles.DrawLine(fov.transform.position, fov.player.transform.position); 
 
         }
 
