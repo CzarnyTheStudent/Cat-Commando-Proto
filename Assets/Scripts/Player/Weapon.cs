@@ -10,9 +10,11 @@ public class Weapon : MonoBehaviour
     public float bulletForce = 20f;
     public int currentClip, maxClipSize = 6, currentAmmo, maxAmmoSize = 18;
     public float reloadTime;
-    public float fireRate;
+    
 
-    private float lastShootTime = 0;
+    //private float lastShootTime = 0;
+    private float timeBtwShots;
+    public float startTimeBtwShots;
     //bools
     bool shooting;
     private bool isReloading = false;
@@ -30,6 +32,10 @@ public class Weapon : MonoBehaviour
         
     }
 
+    void Start()
+    {
+       
+    }
 
     private void Update()
     {
@@ -37,9 +43,9 @@ public class Weapon : MonoBehaviour
       
         if (shooting = Input.GetButtonDown("Fire1") && isReloading == false)
             {
-           
-            
-                weapon.Shoot();
+
+           timeBtwShots = startTimeBtwShots;
+            weapon.Shoot();
             
             
             
@@ -63,15 +69,20 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
-        if (currentClip > 0)
+        if (currentClip > 0 && timeBtwShots <= 0)
         {
-            
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-      
-            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-            currentClip--;
+          
 
+
+
+                GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
+                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+                currentClip--;
+                timeBtwShots = Time.deltaTime;
+
+            
             
         }
 

@@ -11,6 +11,7 @@ public class CameraFollowPlayer : MonoBehaviour
     Vector3 mousePos;
     Camera cam;
     // Start is called before the first frame update
+    private bool dead;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -28,11 +29,13 @@ public class CameraFollowPlayer : MonoBehaviour
         {
             camFollowPlayer ();
         }
+
     }
     public void setFollowPlayer(bool val)
     {
         followPlayer = val;
     }
+    
     void camFollowPlayer()
     {
         Vector3 newPos = new Vector3(player.transform.position.x, player.transform.position.y, this.transform.position.z);
