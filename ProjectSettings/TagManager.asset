@@ -9,13 +9,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - Target
   - Obstruction
-  - 
-  - 
+  - Small Obstruction
+  - "Strza\u0142"
   - 
   - 
   - 

@@ -20,6 +20,9 @@ public class Health : MonoBehaviour
         {
             //SET DEAD CODE
             Debug.Log("Jesteś kurwa martwy");
+            //Destroy(gameObject);
+            
+            
         }
      
         //Pojebane gówno jak nie wiem, kurde kodowanie to wyrok śmierci na mózg
@@ -38,6 +41,10 @@ public class Health : MonoBehaviour
 
         
     }
+
+
+
+
 
     /*
      * ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠛⠛⠛⠿⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
