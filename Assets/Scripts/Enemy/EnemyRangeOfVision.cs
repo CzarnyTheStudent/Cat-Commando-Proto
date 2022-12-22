@@ -22,6 +22,7 @@ public class EnemyRangeOfVision : MonoBehaviour
     //public float pelletFireVel = 15;
     public GameObject pellet;
     
+    public Animator animator;
     
     
     //
@@ -146,7 +147,7 @@ public class EnemyRangeOfVision : MonoBehaviour
                 if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
                 {
                     canSeePlayer = true;
-
+                    animator.SetBool("canSeePlayer2", true);
                 }
 
 
@@ -154,15 +155,18 @@ public class EnemyRangeOfVision : MonoBehaviour
 
                 else
                     canSeePlayer = false;
-               
+                animator.SetBool("canSeePlayer2", false);
+
             }
             else
                 canSeePlayer = false;
-            
+            //animator.SetBool("canSeePlayer2", false);
+
         }
         else if (canSeePlayer)
             canSeePlayer = false;
-        
+        //animator.SetBool("canSeePlayer2", false);
+
     }
 
 
