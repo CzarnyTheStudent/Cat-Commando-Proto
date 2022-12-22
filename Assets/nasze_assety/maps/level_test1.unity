@@ -8478,7 +8478,7 @@ GameObject:
   - component: {fileID: 488893585}
   m_Layer: 0
   m_Name: Mafia2AtakKarabin1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9787,7 +9787,7 @@ GameObject:
   - component: {fileID: 555964816}
   m_Layer: 0
   m_Name: MafiaThree1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14870,7 +14870,7 @@ GameObject:
   - component: {fileID: 837881795}
   m_Layer: 0
   m_Name: BarmanAtakPis1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18622,7 +18622,7 @@ GameObject:
   - component: {fileID: 1014871130}
   m_Layer: 0
   m_Name: M1AtakKar1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22469,7 +22469,7 @@ GameObject:
   - component: {fileID: 1146353217}
   m_Layer: 0
   m_Name: MafiaThreeAtakKarabin1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30509,7 +30509,7 @@ GameObject:
   - component: {fileID: 1607960425}
   m_Layer: 0
   m_Name: Barman
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33631,7 +33631,7 @@ GameObject:
   - component: {fileID: 1779115360}
   m_Layer: 0
   m_Name: Mafia1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34685,7 +34685,7 @@ GameObject:
   - component: {fileID: 1825460740}
   m_Layer: 0
   m_Name: Mafia2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
