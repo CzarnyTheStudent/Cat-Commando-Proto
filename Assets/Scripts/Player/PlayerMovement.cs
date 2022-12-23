@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Text collectedText;
+    
     public static int collectedAmount = 0;
     public bool moving = true;
     public float speed;
@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
             if (moving == true)
         { 
             movement();
-            collectedText.text = "MLEKO ZEBRANE: " + collectedAmount;
+            
         }
         movementCheck();
     }

@@ -20,6 +20,12 @@ public class EnemyBullet : MonoBehaviour
             enemyComponent.TakeDamage(1);
         }
 
+        if (collision.gameObject.TryGetComponent<TableStrength>(out TableStrength tableComponent))
+        {
+            tableComponent.Damage(1);
+        }
+
+
         Destroy(gameObject); //niszczy kule za ka¿dym razem przy kontakcie
     }
 
