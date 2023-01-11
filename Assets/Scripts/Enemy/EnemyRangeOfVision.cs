@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CodeMonkey.Utils;
 using static UnityEngine.GraphicsBuffer;
 //using static UnityEngine.GraphicsBuffer;
 
 public class EnemyRangeOfVision : MonoBehaviour
 {
     //Broñ strzelaj¹ca
-    public GameObject eBulletPrefab;
     public Transform firePoint;
     public float force;
 
@@ -15,16 +15,20 @@ public class EnemyRangeOfVision : MonoBehaviour
     private float timer;
     public bool canShoot;
     public bool canShotgun;
+    public bool canGranade;
 
     public int pelletCount;
     public float spread;
     
     //public float pelletFireVel = 15;
     public GameObject pellet;
-    
+    public GameObject eBulletPrefab;
+    public GameObject pfGrenade;
     public Animator animator;
-    
-    
+
+    public LayerMask targetMask;
+    public LayerMask obstructionMask;
+
     //
     public float speed;
     public float minimumDistance;
@@ -38,40 +42,36 @@ public class EnemyRangeOfVision : MonoBehaviour
     public float angle;
 
     //public GameObject playerRef;
-
-    public LayerMask targetMask;
-    public LayerMask obstructionMask;
+    
 
     public bool canSeePlayer;
 
     public Transform player;
     private Rigidbody2D rb;
 
-    /*
-    void Awake()
-    {
-        pellets = new List<Quaternion>(pelletCount);
-        for (int i = 0; i < pelletCount; i++)
-        {
-            pellets.Add(Quaternion.Euler(Vector2.up));
-        }
-    }
-
-    **/
+   
 
     private void Start()
     {
+
+      
        
         StartCoroutine(FOVRoutine());
         rb = this.GetComponent<Rigidbody2D>();
     }
+   
 
     private void Update()
     {
+       
+
+        
+
         if (canSeePlayer == true)
         {
             Obserwacja();
             FollowToYou();
+            
 
             if (canShoot == true)
             {
@@ -94,21 +94,20 @@ public class EnemyRangeOfVision : MonoBehaviour
                     Shotgun();
 
                 }
-
-                
-
-                
-                
-
-
-
             }
-            
-
-           
 
 
+            if (canGranade == true)
+            {
 
+                timer += Time.deltaTime;
+                if (timer > 2)
+                {
+                    timer = 0;
+                    Grenade();
+
+                }
+            }
         }
     }
 
@@ -147,7 +146,8 @@ public class EnemyRangeOfVision : MonoBehaviour
                 if (!Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
                 {
                     canSeePlayer = true;
-                    animator.SetBool("canSeePlayer2", true);
+                    
+                    //animator.SetBool("canSeePlayer2", true);
                 }
 
 
@@ -155,7 +155,8 @@ public class EnemyRangeOfVision : MonoBehaviour
 
                 else
                     canSeePlayer = false;
-                animator.SetBool("canSeePlayer2", false);
+              
+                //animator.SetBool("canSeePlayer2", false);
 
             }
             else
@@ -264,6 +265,23 @@ public class EnemyRangeOfVision : MonoBehaviour
         }
         
 
+
+    }
+
+
+    void Grenade()
+    {
+
+       GameObject grenadeEnemy = Instantiate(pfGrenade, firePoint.position, firePoint.rotation);
+        //Granade.Create(pfGrenade, firePoint, e.shootPosition);
+        Rigidbody2D xb = grenadeEnemy.GetComponent<Rigidbody2D>();
+
+        xb.AddForce(firePoint.up * force, ForceMode2D.Impulse);
+
+    }
+    
+    private void OnGrenadeExplode(Vector3 position)
+    {
 
     }
 
