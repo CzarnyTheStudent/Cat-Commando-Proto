@@ -2119,11 +2119,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
---- !u!4 &79201943 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7340642491233981647, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
-  m_PrefabInstance: {fileID: 79201942}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &90637577
 GameObject:
   m_ObjectHideFlags: 0
@@ -7331,7 +7326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 376307999}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30999,11 +30994,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1607960426}
   - component: {fileID: 1607960425}
-  - component: {fileID: 1607960430}
-  - component: {fileID: 1607960429}
-  - component: {fileID: 1607960428}
-  - component: {fileID: 1607960427}
   - component: {fileID: 1607960431}
+  - component: {fileID: 1607960435}
+  - component: {fileID: 1607960434}
+  - component: {fileID: 1607960433}
+  - component: {fileID: 1607960432}
   m_Layer: 3
   m_Name: Barman
   m_TagString: Enemy
@@ -31079,102 +31074,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -0.379, z: -28.05}
---- !u!50 &1607960427
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607960424}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &1607960428
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607960424}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1965214, y: -0.036849022}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 3.2, y: 3.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.069987, y: 2.8315177}
-  m_EdgeRadius: 0
---- !u!114 &1607960429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607960424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 3
-  maxEnemyHealth: 3
---- !u!114 &1607960430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607960424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
-  firePoint: {fileID: 1971502921}
-  force: 15
-  canShoot: 1
-  canShotgun: 0
-  pelletCount: 0
-  spread: 0
-  pellet: {fileID: 0}
-  animator: {fileID: 0}
-  speed: 5
-  minimumDistance: 3
-  attackPoint: {fileID: 1971502921}
-  attackRange: 1
-  radius: 6
-  angle: 0
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 128
-  canSeePlayer: 0
-  player: {fileID: 79201943}
 --- !u!95 &1607960431
 Animator:
   serializedVersion: 4
@@ -31195,6 +31094,102 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &1607960432
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607960424}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1607960433
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607960424}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.2, y: 3.2}
+    newSize: {x: 3.2, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3.2}
+  m_EdgeRadius: 0
+--- !u!114 &1607960434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607960424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  maxEnemyHealth: 0
+--- !u!114 &1607960435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607960424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eBulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  force: 0
+  canShoot: 0
+  canShotgun: 0
+  pelletCount: 0
+  spread: 0
+  pellet: {fileID: 0}
+  animator: {fileID: 0}
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  canSeePlayer: 0
+  player: {fileID: 0}
 --- !u!1 &1608129908
 GameObject:
   m_ObjectHideFlags: 0
@@ -31779,11 +31774,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1663109024}
   - component: {fileID: 1663109023}
-  - component: {fileID: 1663109022}
-  - component: {fileID: 1663109021}
-  - component: {fileID: 1663109020}
-  - component: {fileID: 1663109019}
   - component: {fileID: 1663109018}
+  - component: {fileID: 1663109028}
+  - component: {fileID: 1663109027}
+  - component: {fileID: 1663109026}
+  - component: {fileID: 1663109025}
   m_Layer: 3
   m_Name: Barman 5
   m_TagString: Enemy
@@ -31811,102 +31806,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &1663109019
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663109017}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &1663109020
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663109017}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1965214, y: -0.036849022}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 3.2, y: 3.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.069987, y: 2.8315177}
-  m_EdgeRadius: 0
---- !u!114 &1663109021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663109017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 3
-  maxEnemyHealth: 3
---- !u!114 &1663109022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663109017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
-  firePoint: {fileID: 1798213821}
-  force: 15
-  canShoot: 1
-  canShotgun: 0
-  pelletCount: 0
-  spread: 0
-  pellet: {fileID: 0}
-  animator: {fileID: 0}
-  speed: 5
-  minimumDistance: 3
-  attackPoint: {fileID: 1798213821}
-  attackRange: 1
-  radius: 6
-  angle: 0
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 128
-  canSeePlayer: 0
-  player: {fileID: 79201943}
 --- !u!212 &1663109023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31975,6 +31874,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -0.379, z: -28.05}
+--- !u!50 &1663109025
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663109017}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1663109026
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663109017}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.2, y: 3.2}
+    newSize: {x: 3.2, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3.2}
+  m_EdgeRadius: 0
+--- !u!114 &1663109027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663109017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  maxEnemyHealth: 0
+--- !u!114 &1663109028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663109017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eBulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  force: 0
+  canShoot: 0
+  canShotgun: 0
+  pelletCount: 0
+  spread: 0
+  pellet: {fileID: 0}
+  animator: {fileID: 0}
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  canSeePlayer: 0
+  player: {fileID: 0}
 --- !u!1 &1675192396
 GameObject:
   m_ObjectHideFlags: 0
@@ -34568,7 +34563,7 @@ GameObject:
   - component: {fileID: 1779115363}
   m_Layer: 0
   m_Name: Mafia1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34686,7 +34681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
+  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
@@ -39823,11 +39818,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1988836844}
   - component: {fileID: 1988836843}
-  - component: {fileID: 1988836842}
-  - component: {fileID: 1988836841}
-  - component: {fileID: 1988836840}
-  - component: {fileID: 1988836839}
   - component: {fileID: 1988836838}
+  - component: {fileID: 1988836848}
+  - component: {fileID: 1988836847}
+  - component: {fileID: 1988836846}
+  - component: {fileID: 1988836845}
   m_Layer: 3
   m_Name: Barman 2
   m_TagString: Enemy
@@ -39855,102 +39850,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &1988836839
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988836837}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &1988836840
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988836837}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1965214, y: -0.036849022}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 3.2, y: 3.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.069987, y: 2.8315177}
-  m_EdgeRadius: 0
---- !u!114 &1988836841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988836837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 3
-  maxEnemyHealth: 3
---- !u!114 &1988836842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988836837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
-  firePoint: {fileID: 269198556}
-  force: 15
-  canShoot: 1
-  canShotgun: 0
-  pelletCount: 0
-  spread: 0
-  pellet: {fileID: 0}
-  animator: {fileID: 0}
-  speed: 5
-  minimumDistance: 3
-  attackPoint: {fileID: 269198556}
-  attackRange: 1
-  radius: 6
-  angle: 0
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 128
-  canSeePlayer: 0
-  player: {fileID: 79201943}
 --- !u!212 &1988836843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40019,6 +39918,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -0.379, z: -120.297}
+--- !u!50 &1988836845
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988836837}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1988836846
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988836837}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.2, y: 3.2}
+    newSize: {x: 3.2, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3.2}
+  m_EdgeRadius: 0
+--- !u!114 &1988836847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988836837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eBulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  force: 0
+  canShoot: 0
+  canShotgun: 0
+  pelletCount: 0
+  spread: 0
+  pellet: {fileID: 0}
+  animator: {fileID: 0}
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  canSeePlayer: 0
+  player: {fileID: 0}
+--- !u!114 &1988836848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988836837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  maxEnemyHealth: 0
 --- !u!1 &1993808010
 GameObject:
   m_ObjectHideFlags: 0
@@ -40931,12 +40926,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2068709332}
   - component: {fileID: 2068709331}
-  - component: {fileID: 2068709330}
-  - component: {fileID: 2068709329}
-  - component: {fileID: 2068709328}
-  - component: {fileID: 2068709327}
   - component: {fileID: 2068709326}
-  m_Layer: 3
+  - component: {fileID: 2068709336}
+  - component: {fileID: 2068709335}
+  - component: {fileID: 2068709334}
+  - component: {fileID: 2068709333}
+  m_Layer: 0
   m_Name: Barman4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -40963,102 +40958,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &2068709327
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068709325}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &2068709328
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068709325}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1965214, y: -0.036849022}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 3.2, y: 3.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.069987, y: 2.8315177}
-  m_EdgeRadius: 0
---- !u!114 &2068709329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068709325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 3
-  maxEnemyHealth: 3
---- !u!114 &2068709330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068709325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
-  firePoint: {fileID: 376307999}
-  force: 15
-  canShoot: 1
-  canShotgun: 0
-  pelletCount: 0
-  spread: 0
-  pellet: {fileID: 0}
-  animator: {fileID: 0}
-  speed: 5
-  minimumDistance: 3
-  attackPoint: {fileID: 376307999}
-  attackRange: 1
-  radius: 6
-  angle: 0
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 128
-  canSeePlayer: 0
-  player: {fileID: 79201943}
 --- !u!212 &2068709331
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41119,7 +41018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068709325}
   m_LocalRotation: {x: 0.0019091322, y: -0.0027058304, z: -0.57650506, w: 0.8170869}
-  m_LocalPosition: {x: -13.05, y: 28.36, z: 0.01}
+  m_LocalPosition: {x: -13.05, y: 28.41, z: 0.01}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -41127,6 +41026,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -0.379, z: -70.411}
+--- !u!50 &2068709333
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068709325}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &2068709334
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068709325}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.2, y: 3.2}
+    newSize: {x: 3.2, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3.2}
+  m_EdgeRadius: 0
+--- !u!114 &2068709335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068709325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 3
+  maxEnemyHealth: 3
+--- !u!114 &2068709336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068709325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eBulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  force: 0
+  canShoot: 0
+  canShotgun: 0
+  pelletCount: 0
+  spread: 0
+  pellet: {fileID: 0}
+  animator: {fileID: 0}
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  canSeePlayer: 0
+  player: {fileID: 0}
 --- !u!1 &2070094999
 GameObject:
   m_ObjectHideFlags: 0
@@ -41517,11 +41512,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2098774412}
   - component: {fileID: 2098774411}
-  - component: {fileID: 2098774410}
-  - component: {fileID: 2098774409}
-  - component: {fileID: 2098774408}
-  - component: {fileID: 2098774407}
   - component: {fileID: 2098774406}
+  - component: {fileID: 2098774416}
+  - component: {fileID: 2098774415}
+  - component: {fileID: 2098774414}
+  - component: {fileID: 2098774413}
   m_Layer: 3
   m_Name: Barman3
   m_TagString: Enemy
@@ -41549,102 +41544,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &2098774407
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098774405}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &2098774408
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098774405}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1965214, y: -0.036849022}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 3.2, y: 3.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.069987, y: 2.8315177}
-  m_EdgeRadius: 0
---- !u!114 &2098774409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098774405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 3
-  maxEnemyHealth: 3
---- !u!114 &2098774410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098774405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
-  firePoint: {fileID: 1655440875}
-  force: 15
-  canShoot: 1
-  canShotgun: 0
-  pelletCount: 0
-  spread: 0
-  pellet: {fileID: 0}
-  animator: {fileID: 0}
-  speed: 5
-  minimumDistance: 3
-  attackPoint: {fileID: 1655440875}
-  attackRange: 1
-  radius: 6
-  angle: 0
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 128
-  canSeePlayer: 0
-  player: {fileID: 79201943}
 --- !u!212 &2098774411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41713,6 +41612,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -0.379, z: -120.297}
+--- !u!50 &2098774413
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098774405}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &2098774414
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098774405}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.2, y: 3.2}
+    newSize: {x: 3.2, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3.2}
+  m_EdgeRadius: 0
+--- !u!114 &2098774415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098774405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  maxEnemyHealth: 0
+--- !u!114 &2098774416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098774405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eBulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  force: 0
+  canShoot: 0
+  canShotgun: 0
+  pelletCount: 0
+  spread: 0
+  pellet: {fileID: 0}
+  animator: {fileID: 0}
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  canSeePlayer: 0
+  player: {fileID: 0}
 --- !u!1 &2100115435
 GameObject:
   m_ObjectHideFlags: 0
