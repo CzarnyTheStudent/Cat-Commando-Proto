@@ -26,6 +26,8 @@ public class EnemyRangeOfVision : MonoBehaviour
     public GameObject pfGrenade;
     public Animator animator;
 
+
+
     public LayerMask targetMask;
     public LayerMask obstructionMask;
 
@@ -61,17 +63,24 @@ public class EnemyRangeOfVision : MonoBehaviour
     }
    
 
-    private void Update()
+    public void Update()
     {
-       
+        animator = GetComponent<Animator>();
 
-        
+        if (canSeePlayer == false)
+        {
+
+            nieWidze();
+
+        }
+
 
         if (canSeePlayer == true)
         {
             Obserwacja();
             FollowToYou();
-            
+
+           animator.SetBool("canSeePlayer2", true);
 
             if (canShoot == true)
             {
@@ -111,7 +120,17 @@ public class EnemyRangeOfVision : MonoBehaviour
         }
     }
 
+    
+    public void nieWidze()
+    {
+        
+            
 
+            animator.SetBool("canSeePlayer2", false);
+
+        
+
+    }
     
 
     private IEnumerator FOVRoutine()
