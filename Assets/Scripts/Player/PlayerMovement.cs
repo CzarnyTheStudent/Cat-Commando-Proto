@@ -6,9 +6,18 @@ using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
     
-    public static int collectedAmount = 0;
+    
     public bool moving = true;
     public float speed;
+
+    private bool canDash = true;
+    private bool isDashing;
+    public float dashingPower;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;
+
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private TrailRenderer tr;
 
     
 
@@ -16,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         
-            if (moving == true)
+
+        if (moving == true)
         { 
             movement();
             
@@ -31,6 +41,13 @@ public class PlayerMovement : MonoBehaviour
     
     void movement()
     {
+        /*
+        if (isDashing)
+        {
+            return;
+        }
+        **/
+
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate (Vector3.up * speed * Time.deltaTime, Space.World);
@@ -51,6 +68,12 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate (Vector3.right * speed * Time.deltaTime, Space.World);
             moving = true;
         }
+        
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+        
     }
 
     void movementCheck()
@@ -67,9 +90,32 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+    private void FixedUpdate()
+    {
+        if (isDashing)
+        {
+            return;
+        }
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, transform.localScale.y * dashingPower);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+    }
 
 
 
 
-    
+
 }
