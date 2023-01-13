@@ -2106,11 +2106,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7340642491233981632, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
       propertyPath: currentClip
-      value: 23
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7340642491233981632, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
       propertyPath: maxClipSize
-      value: 23
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7340642491233981647, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
       propertyPath: m_RootOrder
@@ -2162,11 +2162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7340642492130438058, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
       propertyPath: health
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7340642492130438058, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
