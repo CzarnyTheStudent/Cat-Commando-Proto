@@ -1619,27 +1619,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!212 &60912864
@@ -4798,27 +4800,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &254359095
@@ -7729,27 +7733,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &390805244
@@ -10180,27 +10186,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!50 &555964821
@@ -13534,27 +13542,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &727233812
@@ -15504,27 +15514,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &862531597
@@ -18118,27 +18130,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &982045380
@@ -21487,27 +21501,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &1105489650
@@ -23827,27 +23843,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!212 &1165980371
@@ -30289,27 +30307,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!212 &1568016152
@@ -31167,27 +31187,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!1 &1608129908
@@ -31796,10 +31818,10 @@ Animator:
   m_GameObject: {fileID: 1663109017}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 346271e4b1aa7f84b882136f432068d9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 99e4f8e65af51494988ad8610a4bc541, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -31889,7 +31911,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -31933,8 +31955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b228b39097858b4458551644ee117d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 0
-  maxEnemyHealth: 0
+  enemyHealth: 3
+  maxEnemyHealth: 3
 --- !u!114 &1663109028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31947,29 +31969,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
-  firePoint: {fileID: 0}
-  force: 0
-  canShoot: 0
+  firePoint: {fileID: 1798213821}
+  force: 15
+  canShoot: 1
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
-  pellet: {fileID: 0}
-  animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
+  pellet: {fileID: 7116036872506829127, guid: d2f9d15d0b2d1364883b7810fa361563, type: 3}
+  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
+  pfGrenade: {fileID: 0}
+  animator: {fileID: 1663109018}
   targetMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   obstructionMask:
     serializedVersion: 2
-    m_Bits: 0
-  canSeePlayer: 0
-  player: {fileID: 0}
+    m_Bits: 128
+  speed: 5
+  minimumDistance: 3
+  attackPoint: {fileID: 1798213821}
+  attackRange: 1
+  radius: 7
+  angle: 0
+  canSeePlayer: 1
+  player: {fileID: 1735516815}
 --- !u!1 &1675192396
 GameObject:
   m_ObjectHideFlags: 0
@@ -32755,27 +32779,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &1709875840
@@ -33554,6 +33580,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d61aabfeec3dc4e9260203aff81537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1735516815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7340642491233981647, guid: 1b36fd0cd2f4f0f44b639d3666471918, type: 3}
+  m_PrefabInstance: {fileID: 79201942}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1737882978
 GameObject:
   m_ObjectHideFlags: 0
@@ -34681,27 +34712,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 313486154146294763, guid: 79483f643b77d7b419d8eb2b1dc0faa6, type: 3}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!50 &1779115363
@@ -35210,27 +35243,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &1806299034
@@ -35335,7 +35370,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -36078,27 +36113,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!50 &1825460744
@@ -36279,27 +36316,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!212 &1832892808
@@ -39403,27 +39442,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!95 &1975169516
@@ -39528,7 +39569,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -39977,27 +40018,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!114 &1988836848
@@ -41099,27 +41142,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!1 &2070094999
@@ -41685,27 +41730,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763ce26f58c74724a9d98d36410a988e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eBulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   force: 0
   canShoot: 0
   canShotgun: 0
+  canGranade: 0
   pelletCount: 0
   spread: 0
   pellet: {fileID: 0}
+  eBulletPrefab: {fileID: 0}
+  pfGrenade: {fileID: 0}
   animator: {fileID: 0}
-  speed: 0
-  minimumDistance: 0
-  attackPoint: {fileID: 0}
-  attackRange: 1
-  radius: 0
-  angle: 0
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   obstructionMask:
     serializedVersion: 2
     m_Bits: 0
+  speed: 0
+  minimumDistance: 0
+  attackPoint: {fileID: 0}
+  attackRange: 1
+  radius: 0
+  angle: 0
   canSeePlayer: 0
   player: {fileID: 0}
 --- !u!1 &2100115435
