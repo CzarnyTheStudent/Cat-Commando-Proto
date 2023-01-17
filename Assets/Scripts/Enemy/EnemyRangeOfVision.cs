@@ -13,14 +13,16 @@ public class EnemyRangeOfVision : MonoBehaviour
 
 
     private float timer;
+    public float phaseTime;
     public bool canShoot;
     public bool canShotgun;
     public bool canGranade;
+    public bool BOSS;
 
     public int pelletCount;
     public float spread;
     
-    //public float pelletFireVel = 15;
+    // Tu dajemy kulki, granaty itp
     public GameObject pellet;
     public GameObject eBulletPrefab;
     public GameObject pfGrenade;
@@ -31,21 +33,18 @@ public class EnemyRangeOfVision : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask obstructionMask;
 
-    //
+    //Szybkoœæ i dystas od gracza jaki ma utrzymywaæ
     public float speed;
     public float minimumDistance;
     //
     // Attack
     public Transform attackPoint;
     public float attackRange = 1f;
-    //
+    //Zasiêg widzenia
     public float radius;
     [Range(0,360)]
     public float angle;
-
-    //public GameObject playerRef;
-    
-
+    //Czy nas widzi
     public bool canSeePlayer;
 
     public Transform player;
@@ -105,6 +104,12 @@ public class EnemyRangeOfVision : MonoBehaviour
                 }
             }
 
+            if (BOSS == true)
+            {
+                StartCoroutine("IamTheBoss");
+               
+            }
+
 
             if (canGranade == true)
             {
@@ -117,6 +122,8 @@ public class EnemyRangeOfVision : MonoBehaviour
 
                 }
             }
+
+            
         }
     }
 
@@ -166,7 +173,7 @@ public class EnemyRangeOfVision : MonoBehaviour
                 {
                     canSeePlayer = true;
                     
-                    //animator.SetBool("canSeePlayer2", true);
+                    
                 }
 
 
@@ -174,18 +181,17 @@ public class EnemyRangeOfVision : MonoBehaviour
 
                 else
                     canSeePlayer = false;
-              
-                //animator.SetBool("canSeePlayer2", false);
+           
 
             }
             else
                 canSeePlayer = false;
-            //animator.SetBool("canSeePlayer2", false);
+       
 
         }
         else if (canSeePlayer)
             canSeePlayer = false;
-        //animator.SetBool("canSeePlayer2", false);
+     
 
     }
 
@@ -228,21 +234,11 @@ public class EnemyRangeOfVision : MonoBehaviour
 
     void Shoot()
     {
-        /*
-        Instantiate(eBulletPrefab, firePoint.position, Quaternion.identity);
-
-        rb = GetComponent<Rigidbody2D>();
-
-        Vector3 direction = player.transform.position - transform.position;
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * force; 
-       **/
-
-
+        
         GameObject bulletEnemy = Instantiate(eBulletPrefab, firePoint.position, firePoint.rotation);
 
         Rigidbody2D rb = bulletEnemy.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * force, ForceMode2D.Impulse);
-
 
 
     }
@@ -320,6 +316,52 @@ public class EnemyRangeOfVision : MonoBehaviour
 
 
     }
+
+    IEnumerator IamTheBoss()
+    {
+      
+        if (BOSS == true)
+        {
+            timer += Time.deltaTime;
+            if (timer > 0.5)
+            {
+                timer = 0;
+                Shoot();
+
+
+
+
+            }
+
+
+
+
+
+        }
+
+        yield return new WaitForSeconds(phaseTime);
+
+
+        timer += Time.deltaTime;
+        if (timer > 0.5)
+        {
+            timer = 0;
+            Shotgun();
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
 
     void OnDrawGizmosSelected()
     {

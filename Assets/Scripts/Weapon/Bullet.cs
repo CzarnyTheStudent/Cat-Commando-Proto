@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.TryGetComponent<HealthEnemy>(out HealthEnemy enemyComponent))
         {
             enemyComponent.TakeDamage(1);
+            Destroy(gameObject);
         }
 
         Destroy(gameObject); //niszczy kule za ka¿dym razem przy kontakcie
